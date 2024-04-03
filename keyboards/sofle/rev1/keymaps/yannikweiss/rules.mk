@@ -1,4 +1,4 @@
-
+WPM_ENABLE = yes
 OLED_ENABLE = yes
 ENCODER_ENABLE = yes
 CONSOLE_ENABLE = no

@@ -123,6 +123,12 @@ static void print_status_narrow(void) {
 
     led_t led_usb_state = host_keyboard_led_state();
     oled_write_ln_P(PSTR("CPSLK"), led_usb_state.caps_lock);
+
+    oled_write_P(PSTR("\n\n"), false);
+    static char wpm_str[16];
+    sprintf(wpm_str, "WPM:\n%03d", get_current_wpm());
+    oled_write(wpm_str, false);
+
 }
 
 oled_rotation_t oled_init_user(oled_rotation_t rotation) {
