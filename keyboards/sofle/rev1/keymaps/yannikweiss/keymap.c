@@ -40,11 +40,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * |  `   |  F1  |  F2  |  F3  |  F4  |  F5  |                    |  F6  |  F7  |  F8  |  F9  | F10  | F11  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | ESC  |      |      |      |      |      |                    |      |   {  |   }  |      |      | F12  |
+ * | ESC  |      |      |   -  |   _  |      |                    |      |      |      |      |      | F12  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | Tab  |      |      |   _  |   =  |      |-------.    ,-------|      |   (  |   )  |   \  |   |  |      |
+ * | Tab  |      |   [  |   {  |   (  |      |-------.    ,-------|      |   )  |   }  |   ]  |      |      |
  * |------+------+------+------+------+------|  MUTE |    |       |------+------+------+------+------+------|
- * | Shift|      |      |   -  |   +  |      |-------|    |-------|      |   [  |   ]  |      |      |      |
+ * | Shift|      |      |   =  |   +  |      |-------|    |-------|      |   |  |   \  |      |      |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *           | LGUI | LAlt | LCTR |LOWER |  /Enter  /       \Space \  |RAISE | RCTR | RAlt | RGUI |
  *           |      |      |      |      | /       /         \      \ |      |      |      |      |
@@ -52,9 +52,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_LO] = LAYOUT(
   XXXXXXX, KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  ,                         KC_F6  , KC_F7  , KC_F8  , KC_F9  , KC_F10 , KC_F11 ,
-  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                         XXXXXXX, KC_LCBR, KC_RCBR, XXXXXXX, XXXXXXX, KC_F12 ,
-  _______, XXXXXXX, XXXXXXX, KC_UNDS, KC_EQL , XXXXXXX,                         XXXXXXX, KC_LPRN, KC_RPRN, KC_BSLS, KC_PIPE, XXXXXXX,
-  _______, XXXXXXX, XXXXXXX, KC_MINS, KC_PLUS, XXXXXXX, XXXXXXX,       XXXXXXX, XXXXXXX, KC_LBRC, KC_RBRC, XXXXXXX, XXXXXXX, XXXXXXX,
+  _______, XXXXXXX, XXXXXXX, KC_MINS, KC_UNDS, XXXXXXX,                         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_F12 ,
+  _______, XXXXXXX, KC_LBRC, KC_LCBR, KC_LPRN, XXXXXXX,                         XXXXXXX, KC_RPRN, KC_RCBR, KC_RBRC, XXXXXXX, XXXXXXX,
+  _______, XXXXXXX, XXXXXXX, KC_EQL , KC_PLUS, XXXXXXX, XXXXXXX,       XXXXXXX, XXXXXXX, KC_PIPE, KC_RBRC, XXXXXXX, XXXXXXX, XXXXXXX,
                     _______, _______, _______, XXXXXXX, _______,       _______, XXXXXXX, _______, _______, _______
 ),
 /* RAISE
